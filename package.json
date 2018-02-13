@@ -1,0 +1,10 @@
+{
+  "name": "trans-gal-jam",
+  "version": "0.0.1",
+  "description": "A game for trans-gal-jam.",
+  "main": "index.js",
+  "author": "bridgs",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
