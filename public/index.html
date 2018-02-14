@@ -13,15 +13,22 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				background-color: #000;
 			}
 			canvas {
+				width: 512px;
+				height: 512px;
 				image-rendering: pixelated;
-				border: 1px solid black;
 			}
 		</style>
-		<script src="./js/main.js" type="module"></script>
+		<script type="module">
+			import main from './js/main.js';
+
+			// run the main method once the dom is loaded
+			window.addEventListener('load', main);
+		</script>
 	</head>
 	<body>
-		<canvas id="canvas"></canvas>
+		<canvas id="canvas" width="128px" height="128px"></canvas>
 	</body>
 </html>
