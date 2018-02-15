@@ -17,7 +17,7 @@ function handleEvent(e) {
 	if (INPUT_PROPS[e.code]) {
 		if (state[e.code] !== e.type) {
 			state[e.code] = e.type;
-			let input = { type: e.type, ...INPUT_PROPS[e.code] };
+			let input = { type: e.type, time: Date.now(), ...INPUT_PROPS[e.code] };
 			// fire anything listening for inputs
 			for (let listener of listeners) {
 				listener(input);
